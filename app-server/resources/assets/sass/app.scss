@@ -1,0 +1,334 @@
+@import "forale/forale";
+@import "components/popup";
+html,body {
+  background: #f1f1f5;
+}
+.h5-container {
+  min-height: 100vh;
+}
+
+@-webkit-keyframes input-cursor-animation {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pay-form {
+  padding: 20px 0 300px 0;
+  .store-info {
+    margin: 0 20px 20px;
+    .logo {
+      display: inline-block;
+      float: left;
+      width: 58px;
+      height: 58px;
+      background: #d8d8d8;
+      border-radius: 5px;
+      border: 2px solid #fff;
+      >img {
+        border-radius: 50px;
+        width:100%;
+        height:100%;
+      }
+    }
+    >span {
+      margin-left: 20px;
+      color: #333;
+      font-size: 18px;
+      line-height: 58px;
+    }
+  }
+  .pay-info {
+    margin: 20px 0 0 0;
+    padding: 10px 20px 0 20px;
+    background: #fff;
+    .pay-info-amount {
+      border-bottom: 1px #e5e5e5 solid;
+      >span {
+        color: #666;
+        font-size: 16px;
+      }
+      .amount-input {
+        position: relative;
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        .currency {
+          position: absolute;
+          left: 0;
+          bottom: 10px;
+          font: inherit;
+          font-size: 24px;
+          line-height: 24px;
+          color: #666;
+        }
+        >span {
+          padding-left: 25px;
+          font-size: 48px;
+          line-height: 48px;
+          font-weight: 500;
+          word-wrap: break-word;
+          word-break: break-all;
+        }
+        .cursor {
+          position: relative;
+          width: 2px;
+          height: 38px;
+          margin-top: 4px;
+          background: #333;
+          display: inline-block;
+          vertical-align: top;
+          -webkit-animation: input-cursor-animation 1s infinite;
+        }
+      }
+    }
+  }
+  .pay-remark {
+    padding: 10px 20px;
+    background: #fff;
+    input {
+      font-size: 14px;
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  a {
+    color: #999;
+    font-size: 14px;
+    &::before {
+      margin-right: 5px;
+    }
+  }
+}
+
+.keyboard {
+  position: fixed;
+  background: #fff;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ececec;
+  >ul {
+    float: left;
+    >li {
+      height: 70px;
+      line-height: 70px;
+      font-size: 32px;
+      font-weight: 300;
+      text-align: center;
+      color: #333;
+    }
+    &.keyboard-nums {
+      width: 75%;
+      >li {
+        float: left;
+        width: 33.333333%;
+        &:active {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+        @include background-borders(right bottom, #d8d8d8);
+      }
+    }
+    &.keyboard-btns {
+      width: 25%;
+      >li {
+        @include background-borders(bottom, #d8d8d8);
+        &.if-del {
+          font-size: 26px;
+        }
+        &.if-clear {
+          font-size: 24px;
+        }
+      }
+      .btn-pay {
+        padding: 40px 20px;
+        background: #1AAD19;
+        height: 140px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 1.4;
+      }
+      .btn-wxpay {
+        background: #1AAD19;
+      }
+      .btn-alipay {
+        background: #5599ff;
+      }
+      .btn-paying {
+        background: #D8D8D8;
+      }
+    }
+  }
+}
+
+.pay-form-amount {
+  text-align: center;
+  padding: 0 20px;
+  .store-info {
+    margin: 20px auto 0;
+    .logo {
+      margin: 0 auto 5px;
+      width: 58px;
+      height: 58px;
+      background: #d8d8d8;
+      border-radius: 5px;
+      border: 2px solid #fff;
+      >img {
+        border-radius: 50px;
+        width:100%;
+        height:100%;
+      }
+    }
+    span {
+      color: #333;
+    }
+  }
+  .pay-info {
+    margin: 10px auto 20px;
+    .pay-info-amount {
+      .currency {
+        font: inherit;
+        font-size: 24px;
+      }
+      span {
+        font-size: 48px;
+      }
+    }
+  }
+  .btn {
+    &.btn-wxpay {
+      background: #1AAD19;
+      border-color: #1AAD19;
+    }
+    &.btn-alipay {
+      background: #5599ff;
+      border-color: #5599ff;
+    }
+  }
+}
+
+
+.page-paid {
+  padding-top: 40px;
+  background: #fff;
+  .paid-info {
+    text-align: center;
+    .if-success {
+      font-size: 80px;
+      line-height: 1;
+      color: #1AAD19;
+      display: block;
+    }
+    >span {
+      display: block;
+      padding-top: 15px;
+      font-size: 16px;
+      line-height: 16px;
+      color: #666;
+    }
+    .paid-amount {
+      display: block;
+      padding-top: 15px;
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+  .trade-detail {
+    margin: 35px 15px 0 15px;
+    padding: 5px 0;
+    @include background-borders(top, #d8d8d8);
+    li {
+      height: 32px;
+      line-height: 32px;
+      color: #5C5C5C;
+      font-size: 16px;
+      label {
+        margin: 0;
+        float: left;
+        font-weight: normal;
+      }
+      div {
+        float: right;
+      }
+    }
+  }
+  .send-credit {
+    margin: 30px 15px 0;
+    border-radius: 5px;
+    background-color: #EFEFEF;
+    padding: 10px 15px 15px;
+    span {
+      i {
+        color: #F45555;
+        font-style: inherit;
+        font-weight: 600;
+        font-size: 1.6rem;
+        padding: 0 5px;
+      }
+    }
+    .receive-from {
+      margin-top: 10px;
+      display: flex;
+      input {
+        padding: 0 10px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.6rem;
+        background-color: #fff;
+        border-radius: 5px 0 0 5px;
+      }
+      .btn {
+        border-radius: 0 5px 5px 0;
+        border: none;
+        height: 40px;
+        background-color: #F45555;
+        color: #fff;
+      }
+    }
+    a {
+      margin-left: 5px;
+      color: #F45555;
+    }
+  }
+}
+
+.verify-member {
+  .popup-options {
+    .btn {
+      border: none;
+      background-color: #F45555;
+    }
+  }
+  .form-horizontal {
+    padding: 0 .85rem;
+    .captcha {
+      .form-item {
+        padding-right: 100px;
+      }
+      img {
+        position: absolute;
+        top: 6px;
+        right: 0;
+        width: 100px;
+        height: 40px;
+      }
+    }
+    .verify-code {
+      .form-item {
+        padding-right: 100px;
+      }
+      .btn {
+        position: absolute;
+        top: 12px;
+        right: 0;
+      }
+    }
+  }
+}

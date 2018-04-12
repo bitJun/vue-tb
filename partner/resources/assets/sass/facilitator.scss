@@ -1,0 +1,78 @@
+.facilitator_view {
+  .baseInfo {
+    background: #ffffff;
+    padding: 15px;
+  }
+  .profit {
+    background: #ffffff;
+    padding: 15px 0px;
+    margin-top: 20px;
+    h3, p {
+      height: 40px;
+      line-height: 40px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .under {
+    background: #ffffff;
+    padding-bottom: 20px;
+    .list {
+      padding: 15px;
+    }
+  }
+}
+.facilitator_list {
+  background: #ffffff;
+  padding-bottom: 20px;
+  .list {
+    padding: 15px;
+  }
+}
+.add_facilitator {
+  padding-bottom: 30px;
+  background: #ffffff;
+  .add_form {
+    padding: 20px;
+  }
+}
+.facilitator_detail {
+  .baseInfo {
+    background: #ffffff;
+    margin-bottom: 20px;
+    .facilitatorInfo {
+      padding: 20px;
+      p {
+        height: 40px;
+        line-height: 40px;
+        color: #333333;
+        font-size: 14px;
+      }
+    }
+  }
+  .tradeInfo {
+    background: #ffffff;
+    p , h3 {
+      height: 40px;
+      line-height: 40px;
+      color: #333333;
+    }
+    p {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+  }
+  .underlist {
+    background: #ffffff;
+    padding-bottom: 15px;
+  }
+  .list {
+    padding: 15px;
+  }
+}

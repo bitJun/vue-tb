@@ -1,0 +1,70 @@
+.sidebar {
+	width: 60px;
+	background-color: #333;
+	height: 100%;
+	position: fixed;
+	top: 49px;
+	overflow-y: auto;
+	z-index:999;
+
+	>ul {
+		>li {
+			&.active {
+				background-color: rgba(255,255,255,.2);
+				>a>span{
+					color: #fff;
+				}
+			}
+			&:hover {
+				background-color: rgba(255, 255, 255, .1);
+			}
+			>a {
+				text-align: center;
+				display: block;
+				padding: 6px 10px;
+				color: #fff;
+				&.active {
+					background-color: rgba(255,255,255,.2);
+					>a>span{
+						color: #fff;
+					}
+				}
+				>i {
+					display: block;
+					font-size: 20px;
+					margin-bottom: 3px;
+				}
+				>span {
+					color: rgba(255,255,255,.8);
+				}
+			}
+		}
+	};
+
+	>div {
+		width: 60px;
+		position: fixed;
+		bottom: 0;
+		&.active {
+				background-color: rgba(255,255,255,.2);
+				>a>span{
+					color: #fff;
+				}
+			}
+			&:hover {
+				background-color: rgba(255, 255, 255, .1);
+			}
+			>a {
+				text-align: center;
+				display: block;
+				padding: 6px 0px;
+				color: #fff;
+				font-size: 10px;
+				word-wrap: break-word;
+				.fa {
+					color: #f60;
+				}
+				
+			}
+	}
+}

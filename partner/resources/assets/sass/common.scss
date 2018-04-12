@@ -1,0 +1,167 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: "微软雅黑";
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #f0f0f0 !important;
+}
+p,h1,h2,h3,h4,h5,h6{
+	margin: 0px;
+	padding: 0px;
+}
+em,i {
+	font-style: normal;
+}
+ul {
+	list-style-type: none;
+	margin: 0px;
+}
+a, a:hover {
+	text-decoration: none !important;
+	cursor: pointer;
+}
+table {
+	width: 100%;
+}
+.clearfix { 
+	*zoom: 1; 
+} 
+.clearfix:before,.clearfix:after { 
+	display: table; 
+	line-height: 0; 
+	content: ""; 
+} 
+.clearfix:after { 
+	clear: both; 
+} 
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.unvisible {
+	display: none;
+}
+*:focus { outline: none; }
+
+.current-page {
+	padding-left: 200px;
+	padding-top: 60px;
+}
+.single-page {
+	padding: 20px;
+}
+.must {
+	color: #ff0000;
+}
+.title {
+	border-bottom: 1px solid #e9eaec;
+	padding: 14px 16px;
+	line-height: 1;
+}
+.parnter {
+	height: 100%;
+	width: 100%;
+}
+.main-container {
+	padding-left:200px;
+	margin-top: 65px;
+}
+.region-picker {
+	position: relative;
+	.dropdown-menu {
+		width: 350px;
+		display: block;
+	}
+	.region-picker-tab {
+		li {
+			display: table-cell;
+			width: 1%;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			cursor: pointer;
+			background: #f9f9f9;
+			border-width: 0 1px 1px 0;
+			border-style: solid;
+			border-color: #eee;
+		}
+		li.active {
+			background: #FFF;
+			border-bottom-color: #fff;
+		}
+	}
+	.region-picker-panel {
+		padding: 10px;
+		li {
+			float: left;
+			padding: 0 10px;
+			margin: 0 5px 5px 0;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		li.active {
+			background-color: #2d8cf0;
+			color: #FFF;
+		}
+	}
+}
+.demo-upload-img-cover {
+	height: 20px;
+	position: absolute;
+	top: 40px;
+}
+.demo-upload-img-cover, .demo-upload-list-cover {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.6);
+}
+.demo-upload-img-cover i.left {
+	left: 8px;
+}
+.demo-upload-img-cover i {
+	position: absolute;
+}
+.demo-upload-img-cover i, .demo-upload-list-cover i {
+	color: #fff;
+	font-size: 20px;
+	margin: 0 2px;
+	cursor: pointer;
+}
+.add {
+	padding: 0px !important;
+	height: 38px;
+	a {
+		display: block;
+		height: 38px;
+		line-height: 38px;
+		text-align: center;
+		padding: 0px 15px;
+		color: #ffffff;
+	}
+}
+.add:hover {
+	a {
+		color: #ffffff;
+	}
+}
+.clr-bule {
+	color: #2d8cf0;
+}
+.clr-payout {
+	color: #f60;
+}

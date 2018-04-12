@@ -1,0 +1,48 @@
+// Utility classes
+// =============================================================================
+
+
+.clearfix {
+  @include clearfix();
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.border-t {
+  @include background-borders(top, $border-color-normal);
+}
+.border-b {
+  @include background-borders(bottom, $border-color-normal);
+}
+.border-tb {
+  @include background-borders(top bottom, $border-color-normal);
+}
+.border-l {
+  @include background-borders(left, $border-color-normal);
+}
+.border-r {
+  @include background-borders(right, $border-color-normal);
+}

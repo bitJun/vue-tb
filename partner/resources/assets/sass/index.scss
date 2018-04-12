@@ -1,0 +1,62 @@
+.index_view {
+  .notice_list {
+    background: #ffffff;
+    margin-bottom: 20px;
+    height: 40px;
+    li {
+      line-height: 40px;
+      text-indent: 20px;
+    }
+  }
+  .section {
+    background: #ffffff;
+    margin-bottom: 20px;
+    .businessInfo {
+      padding-top: 20px;
+      p {
+        font-size: 14px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+      }
+      h4 {
+        font-size: 18px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+    .mokerInfo {
+      padding: 20px 0px;
+      p , h3 {
+        height: 40px;
+        line-height: 40px;
+      }
+      p {
+        font-size: 14px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+    .facilitatorInfo{
+      padding-top: 20px;
+      .ivu-col {
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+      }
+    } 
+  }
+  .Overview {
+    padding: 10px 20px;
+    h4, p {
+      height: 40px;
+      line-height: 40px;
+    }
+    .price {
+      color: #f60;
+      font-size: 22px;
+    }
+  }
+}

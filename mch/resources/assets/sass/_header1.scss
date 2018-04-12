@@ -1,0 +1,21 @@
+.header-wrapper {
+  .layout-logo{
+    width: 120px;
+    height: 30px;
+    background-image: url(/image/logo.png);
+    background-size: 100%;
+    border-radius: 3px;
+    float: left;
+    position: relative;
+    top: 15px;
+    left: 20px;
+  }
+  .layout-nav{
+    width:800px;
+    margin: 0 auto;
+  }
+  .layout-profile{
+    float:right;
+    margin-right: 20px
+  }
+}

@@ -1,0 +1,216 @@
+// Colors
+// =============================================================================
+
+// Black - White - Gray
+// -----------------------------------------------------------------------------
+
+$black:                  #000;
+$white:                  #fff;
+
+$gray-base:              #000;
+$gray-darker:            lighten($black, 13.5%); // #222
+$gray-dark:              lighten($black, 20%);   // #333
+$gray:                   lighten($black, 33.5%); // #555
+$gray-light:             lighten($black, 46.7%); // #777
+$gray-999:               lighten($black, 60%); // #999
+$gray-lighter:           lighten($black, 93.5%); // #eee
+
+
+// Brand
+// -----------------------------------------------------------------------------
+
+$brand-primary:         #00a0f8;
+$brand-success:         #06bf04;
+$brand-info:            #5bc0de;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #e95757;
+$brand-cancel:          #858c95;
+
+
+// Body
+// -----------------------------------------------------------------------------
+
+$body-bg:               $white;
+$text-color:            $gray-dark;
+
+
+// Links
+// -----------------------------------------------------------------------------
+
+$link-color:              $brand-primary;
+$link-hover-color:        darken($link-color, 15%);
+
+
+// Typography
+// =============================================================================
+
+$font-family-sans-serif: Helvetica, STHeiTi, sans-serif;
+//$font-family-sans-serif:  Helvetica,"STHeiti STXihei",Tohoma,Arial;
+//
+
+$font-size-normal:      1.4rem; // 14px
+$font-size-sm:          1.2rem; // 12px
+$font-size-lg:          1.6rem; // 16px
+$font-size-xl:          1.8rem; // 18px
+
+$font-size-h1:          3.6rem;
+$font-size-h2:          3rem;
+$font-size-h3:          2.4rem;
+$font-size-h4:          1.8rem;
+$font-size-h5:          1.6rem;
+$font-size-h6:          1.4rem;
+
+$line-height-normal:    1.6;
+$line-height-computed:  floor(($font-size-normal * $line-height-normal));
+
+// headings
+$headings-font-weight:  600;
+$headings-line-height:  1.1;
+
+// Paddings
+// -----------------------------------------------------------------------------
+
+$padding-vertical-normal: .6rem;
+$padding-horizontal-normal: 1.2rem;
+
+$padding-vertical-sm: .4rem;
+$padding-horizontal-sm: .8rem;
+
+// Borders
+// -----------------------------------------------------------------------------
+
+$border-color-normal:   #ddd;
+$border-radius-normal:  .4rem;
+$border-radius-sm:      .3rem;
+$border-radius-lg:      .6rem;
+
+
+// Buttons
+// =============================================================================
+
+$btn-font-weight:                normal;
+$btn-font-size:                  $font-size-xl;
+$btn-line-height:                1.6;
+
+$btn-font-size-sm:               $font-size-normal;
+$btn-line-height-sm:             1.4;
+
+$btn-default-color:              #333;
+$btn-default-bg:                 #f5f5f5;
+$btn-default-border:             darken($btn-default-bg, 5%);
+
+$btn-primary-color:              $white;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             darken($btn-primary-bg, 5%);
+
+$btn-success-color:              $white;
+$btn-success-bg:                 $brand-success;
+$btn-success-border:             darken($btn-success-bg, 5%);
+
+$btn-info-color:                 $white;
+$btn-info-bg:                    $brand-info;
+$btn-info-border:                darken($btn-info-bg, 5%);
+
+$btn-warning-color:              $white;
+$btn-warning-bg:                 $brand-warning;
+$btn-warning-border:             darken($btn-warning-bg, 5%);
+
+$btn-danger-color:               $white;
+$btn-danger-bg:                  $brand-danger;
+$btn-danger-border:              darken($btn-danger-bg, 5%);
+
+$btn-cancel-color:               $white;
+$btn-cancel-bg:                  $brand-cancel;
+$btn-cancel-border:              darken($btn-cancel-bg, 5%);
+
+$btn-disabled-color:             $white;
+$btn-disabled-bg:                #ddd;
+$btn-disabled-border:            darken(#ddd, 5%);
+
+// Forms
+// =============================================================================
+
+$input-bg:                 $white;
+$input-height-normal:      4.3rem;
+$input-color:              $gray;
+$input-border:             #ccc;
+$input-border-radius:      $border-radius-normal;
+
+// Tables
+// =============================================================================
+
+
+$table-cell-padding:       .6rem;
+$table-bg:                 transparent;
+$table-bg-active:          #f5f5f5;
+$table-border-color:       $border-color-normal;
+
+// Thumbnails
+// =============================================================================
+
+
+$thumbnail-padding:           4px;
+$thumbnail-bg:                $body-bg;
+$thumbnail-border:            $border-color-normal;
+$thumbnail-border-radius:     $border-radius-normal;
+
+
+// Lists
+// =============================================================================
+
+$list-bg: $white;
+
+// grid
+// =============================================================================
+
+$trisect-img-height:          100%;
+$halve-img-height:            100%;
+$one-img-height:              100%;
+
+// search
+// =============================================================================
+
+$searchbar-bg:                #f0f0f0;
+$search-btn-color:            #00a0f8;
+$search-icon-color:           rgba(0,0,0,.4);
+$search-input-bg:             $white;
+$search-input-color:          $gray;
+// tab
+// =============================================================================
+
+$tab-height:                  4.5rem;
+$tab-bg:                      #fcfcfc;
+$tab-border-color:            $gray-lighter;
+$tab-active-color:            #dd2727;
+
+// navmenu
+// =============================================================================
+
+$navmenu-bg:                  #fafafa;
+$navmenu-color:               #333333;
+$navmenu-border:              #e5e5e5;
+$navmenu-color-active:        #00a0f8;
+
+// wxmenu
+// =============================================================================
+
+$wxmenu-bg:                  #fafafa;
+$wxmenu-color:               #333;
+$wxmenu-border:              #e5e5e5;
+
+
+//panel
+// =============================================================================
+
+$panel-width:                20rem;
+
+$price-color: #ff6600;
+$red-color: #ff6666;
+
+$btn-cart-color:              $white;
+$btn-cart-bg:                 #ff9402;
+$btn-cart-border:             darken($btn-cart-bg, 5%);
+
+$btn-buy-color:              $white;
+$btn-buy-bg:                 #ff5000;
+$btn-buy-border:             darken($btn-buy-bg, 5%);

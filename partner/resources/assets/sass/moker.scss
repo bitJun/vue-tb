@@ -1,0 +1,110 @@
+.moker_list {
+  .moker {
+    padding: 10px 20px;
+    background: #ffffff;
+    border: 1px solid #e9eaec;
+    margin-bottom: 20px;
+    .title {
+      border-bottom: 1px solid #e9eaec;
+      padding: 14px 16px;
+      line-height: 1;
+    }
+  }
+  .moker_list {
+    background: #ffffff;
+    padding: 10px 20px 30px 20px;
+    border: 1px solid #e9eaec;
+    .ivu-table-wrapper {
+      margin-bottom: 20px;
+    }
+  }
+}
+.moker_detail {
+  .base_info {
+    background: #ffffff;
+    border: 1px solid #e9eaec;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    .title {
+      border-bottom: 1px solid #e9eaec;
+      padding: 14px 16px;
+      line-height: 1;
+    }
+    .info_detail {
+      padding: 10px 0px;
+      border-bottom: 1px solid #cccccc;
+      .moker_logo {
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+      }
+      p {
+        height: 25px;
+        line-height: 25px;
+      }
+    }
+    .balance {
+      padding: 20px 0px;
+      p , h3 {
+        height: 40px;
+        line-height: 40px;
+        color: #333333;
+      }
+      p {
+        font-size: 14px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+  .balance_List {
+    background: #ffffff;
+    border: 1px solid #e9eaec;
+    padding-bottom: 30px;
+    .title {
+      border-bottom: 1px solid #e9eaec;
+      padding: 14px 16px;
+      line-height: 1;
+    }
+    .list {
+      padding: 10px 20px;
+    }
+  }
+}
+.moker_setting {
+  padding: 10px 20px;
+  background: #ffffff;
+  border: 1px solid #e9eaec;
+  .setting {
+    padding: 20px 0px;
+  }
+  .tli {
+    height: 30px;
+    line-height: 30px;
+    color: #333333;
+    font-size: 16px;
+    text-indent: 20px;
+    margin-bottom: 20px;
+  }
+  .save {
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background: #169BD5;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+  }
+  .remark {
+    color: #FF0000;
+    margin-left: 20px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
