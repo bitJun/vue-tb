@@ -1,0 +1,244 @@
+// Buttons
+// =============================================================================
+
+.button {
+  position: relative;
+  display: block;
+  height: 1.35rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  padding: 0 .5rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: .7rem;
+  line-height: 1.25rem;
+  color: #0894ec;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #0894ec;
+  border-radius: .25rem;
+
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0; // for input.btn
+  text-align: center;
+  vertical-align: middle;
+  font-weight: $btn-font-weight;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  user-select: none;
+  outline: 0;
+  @include button-size($padding-vertical-normal, $padding-horizontal-normal, $btn-font-size, $btn-line-height, $border-radius-normal);
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+
+  &.disabled,
+  &[disabled] {
+    @include button-variant($btn-disabled-color, $btn-disabled-bg, $btn-disabled-border);
+    pointer-events: none;
+  }
+
+}
+
+.btn-white {
+  @include button-variant($btn-white-color, $btn-white-bg, $btn-white-border);
+}
+
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+
+.btn-primary-o {
+  @include button-variant($btn-primary-border, $btn-white-bg, $btn-primary-border);
+}
+
+.btn-success {
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+
+.btn-success-o {
+  @include button-variant($btn-success-border, $btn-white-bg, $btn-success-border);
+}
+
+.btn-info {
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+}
+
+.btn-info-o {
+  @include button-variant($btn-info-border, $btn-white-bg, $btn-info-border);
+}
+
+.btn-warning {
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+}
+
+.btn-warning-o {
+  @include button-variant($btn-warning-border, $btn-white-bg, $btn-warning-border);
+}
+
+.btn-danger {
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+
+.btn-danger-o {
+  @include button-variant($btn-danger-border, $btn-white-bg, $btn-danger-border);
+}
+
+.btn-cancel {
+  @include button-variant($btn-cancel-color, $btn-cancel-bg, $btn-cancel-border);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-block + .btn-block {
+  margin-top: .6rem;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+.btn-sm {
+  @extend .btn;
+  @include button-size($padding-vertical-sm, $padding-horizontal-sm, $btn-font-size-sm, $btn-line-height-sm, $border-radius-normal);
+}
+
+.btn-row {
+  display: flex;
+  -webkit-box-lines: single;
+  > .btn {
+    width: 100%;
+    -webkit-box-flex: 1;
+  }
+}
+
+.btn-row {
+  .btn + .btn,
+  .btn + .btn-group,
+  .btn-group + .btn,
+  .btn-group + .btn-group {
+    margin-left: -1px;
+  }
+}
+
+.btn-row > .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.btn-row > .btn:first-child {
+  margin-left: 0;
+  &:not(:last-child) {
+    @include border-right-radius(0);
+  }
+}
+
+.btn-row > .btn:last-child:not(:first-child) {
+  @include border-left-radius(0);
+}
+
+.button-light {
+  color: #ccc;
+  color: #5f646e;
+  border-color: #ccc;
+}
+.button-light:active {
+  color: #0a8ddf;
+  border-color: #0a8ddf;
+}
+.button-light.button-fill {
+  color: white;
+  background-color: #ccc;
+}
+.button-light.button-fill:active {
+  background-color: #0a8ddf;
+}
+
+.button-dark {
+  color: #6e727b;
+  color: #5f646e;
+  border-color: #6e727b;
+}
+.button-dark:active {
+  color: #0a8ddf;
+  border-color: #0a8ddf;
+}
+.button-dark.button-fill {
+  color: white;
+  background-color: #6e727b;
+}
+.button-dark.button-fill:active {
+  background-color: #0a8ddf;
+}
+
+.btn-circle {
+  position: relative;
+  line-height: 1.6;
+  background-color: $white!important;
+  color: $gray;
+  border-width: 0;
+  font-size: 1.4rem;
+  text-align: center;
+  z-index: 2;
+  &:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  &.btn-buy:before {
+    background-color: #ff6600!important;
+  }
+  i {
+    display: block;
+    line-height: 1;
+    font-size: 3.4rem;
+  }
+}
+
+.btn-wechat {
+  background: $btn-wechat;
+  color: $white;
+  border-color: $btn-wechat;
+}
+
+.control-btns {
+  width: 100%;
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  .btn {
+    margin: 0 1rem 0 0;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    -webkit-flex-flow: column;
+    -webkit-align-items: flex-start;
+    -webkit-justify-content: center;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
